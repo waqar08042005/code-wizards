@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stalking and Blackmail Prevention</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Online Safety Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#report">Report Incident</a></li>
+                    <li><a href="#prevention">Prevention Tips</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <section id="home">
+        <h2>Welcome to the Online Safety Hub</h2>
+        <p>Your safety is our priority. Learn how to protect yourself and report online threats effectively. This platform provides tips, resources, and a place to report incidents of online stalking, blackmail, or harassment.</p>
+    </section>
+
+    <section id="report">
+        <h2>Report an Incident</h2>
+        <form id="incidentForm">
+            <!-- User's Name -->
+            <label for="name">Your Name (Optional):</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name (optional)">
+            
+            <!-- User's Contact Information -->
+            <label for="email">Your Email (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email (optional)">
+            
+            <label for="phone">Your Phone Number (Optional):</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+            
+            <!-- Incident Type -->
+            <label for="incident_type">Type of Incident:</label>
+            <select id="incident_type" required>
+                <option value="stalking">Stalking</option>
+                <option value="blackmail">Blackmail</option>
+                <option value="harassment">Harassment</option>
+            </select>
+            
+            <!-- Incident Description -->
+            <label for="incident_description">Incident Description:</label>
+            <textarea id="incident_description" rows="5" placeholder="Describe the incident..." required></textarea>
+            
+            <!-- Incident Timeline -->
+            <label for="incident_timeline">Incident Timeline:</label>
+            <textarea id="incident_timeline" rows="5" placeholder="Provide a timeline of events leading up to the incident..." required></textarea>
+
+            <!-- Victim's Relationship to Perpetrator -->
+            <label for="relationship">Victim's Relationship to Perpetrator:</label>
+            <select id="relationship" required>
+                <option value="stranger">Stranger</option>
+                <option value="acquaintance">Acquaintance</option>
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="partner">Partner</option>
+            </select>
+            
+            <!-- Threat Level -->
+            <label for="threat_level">Threat Level:</label>
+            <select id="threat_level" required>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+                <option value="severe">Severe</option>
+            </select>
+
+            <!-- Affected Platforms -->
+            <label for="platforms">Platforms/Channels Affected:</label>
+            <select id="platforms" multiple required>
+                <option value="social_media">Social Media</option>
+                <option value="email">Email</option>
+                <option value="messaging">Messaging App</option>
+                <option value="forum">Online Forum</option>
+                <option value="website">Website</option>
+            </select>
+
+            <!-- Has Perpetrator Been Identified? -->
+            <label for="identified">Has the Perpetrator Been Identified?</label>
+            <select id="identified" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <!-- Follow-up Actions Taken -->
+            <label for="actions_taken">Follow-up Actions Taken:</label>
+            <textarea id="actions_taken" rows="5" placeholder="Have you reported this incident to any platform or authorities?" required></textarea>
+
+            <!-- Incident Location -->
+            <label for="location">Location (City/Country):</label>
+            <input type="text" id="location" name="location" placeholder="Enter your city or country (optional)">
+            
+            <!-- Incident Date -->
+            <label for="incident_date">Date of Incident:</label>
+            <input type="date" id="incident_date" name="incident_date" required>
+
+            <!-- Upload Evidence -->
+            <label for="evidence">Upload Evidence:</label>
+            <input type="file" id="evidence" required>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+
+    <section id="prevention">
+        <h2>Prevention Tips</h2>
+        <ul>
+            <li><strong>Keep personal details private:</strong> Avoid sharing too much personal information online, such as your home address, phone number, or financial details.</li>
+            <li><strong>Use strong, unique passwords:</strong> Create passwords that are difficult to guess and use a different password for each account.</li>
+            <li><strong>Enable two-factor authentication:</strong> Use two-factor authentication (2FA) for added security on accounts that support it, like email or social media.</li>
+            <li><strong>Report suspicious behavior promptly:</strong> If someone is harassing or stalking you online, report it to the platform immediately. Document the behavior if possible.</li>
+            <li><strong>Beware of phishing attempts:</strong> Do not click on links or open attachments in unsolicited emails. Phishing is a common method used by criminals to gain access to your personal information.</li>
+            <li><strong>Monitor your digital footprint:</strong> Regularly search for your name online and review the information available about you. This helps you stay aware of any potentially harmful content.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>If you're a victim of online stalking or blackmail, here are some trusted resources for support and guidance:</p>
+        <ul>
+            <li><a href="https://www.cyberbullying.org/" target="_blank">Cyberbullying Research Center</a>: Learn about cyberbullying and its impact on victims.</li>
+            <li><a href="https://www.stopstalking.us/" target="_blank">Stop Stalking US</a>: Resources and information to help those who are experiencing stalking.</li>
+            <li><a href="https://www.law.cornell.edu/wex/blackmail" target="_blank">Legal Help on Blackmail</a>: Legal information about blackmail, including how to protect yourself and take action.</li>
+            <li><a href="https://www.fbi.gov/investigate/violent-crime/stalking" target="_blank">FBI Stalking Resources</a>: Guidelines from the FBI on how to recognize and respond to stalking.</li>
+            <li><a href="https://www.1in6.org/" target="_blank">1in6 - Sexual Assault Resources</a>: A support center for male victims of sexual assault and related crimes, including stalking and blackmail.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Safety Hub. All Rights Reserved.</p>
+    </footer>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
